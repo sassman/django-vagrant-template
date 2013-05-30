@@ -5,7 +5,15 @@
     {{ block.super }}
 
     {% load staticfiles %}
-    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    {% load compress %}
+
+    {% compress css %}
+        <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    
+        {% block app_css %}
+
+        {% endblock %}
+    {% endcompress %}
 
 {% endblock %}
 
