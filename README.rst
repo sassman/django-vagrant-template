@@ -34,3 +34,10 @@ machine, exported to the VM as a shared folder (under linux via NFS); code editi
 
 runserver will utilize the django runserver and not yet the gunicorn server.
 
+
+MySQL Access
+------------
+
+you can also easily access the mysql database from your localmachine. Of course the default port 3306 from mysql gets forwared to your machine. mysql://localhost:3306
+You should be able to connect with the `project_name` user account or with root (without a password).
+
