@@ -13,7 +13,7 @@ A template for new Django 1.5 projects developed under Vagrant. Features offered
 * South, django-compressor, django-debug-toolbar and more out of the box (see requirements.txt for more details)
 * A boilerplate base template with jquery included, and various other ideas and best practices borrowed from https://github.com/h5bp/html5-boilerplate
 * A boilerplate base template with twitter bootstrap included from https://github.com/jonfaustman/django-frontend-skeleton
-
+* sphinx documentation support is included as well
 
 Setup
 -----
@@ -23,11 +23,16 @@ Install Django 1.5 on your host machine. To start a new project, run the followi
 
     django-admin.py startproject --template https://github.com/sassman/django-vagrant-template/zipball/master --name=Vagrantfile <your-project-name>
     cd <your-project-name>
-    vagrant up
+    vagrant up      # this can take a while on the first setup run, be patient
     vagrant ssh
+
     #  (then, within the SSH session:)
     cd $HOME/<your-project-name>
     runserver   # comes from a nice bash alias
+
+
+WebServer Access
+----------------
 
 This will make the app accessible on the host machine as http://localhost:8000/ . The codebase is located on the host
 machine, exported to the VM as a shared folder (under linux via NFS); code editing and Git operations will generally be done on the host.
