@@ -1,0 +1,6 @@
+.vagrant
+*/.idea/*
+settings/local.py
+data/logs/app.log
+data/media/*
+static/*
