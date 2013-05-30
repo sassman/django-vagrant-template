@@ -1,0 +1,14 @@
+Django==1.5.1
+South==0.7.6
+# django-devserver
+django-compressor
+django-debug-toolbar
+django-frontend-skeleton
+gunicorn
+gunicorn-websocket
+djangorestframework
+django-filter
+markdown
+sphinx
+django-storages
+pil
