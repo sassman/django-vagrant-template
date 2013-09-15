@@ -30,6 +30,8 @@ Install Django 1.5 on your host machine. To start a new project, run the followi
     cd $HOME/<your-project-name>
     make install-dependencies
     runserver   # comes from a nice bash alias
+    # or use it direct
+    python manage runserver --settings=<your-project-name>.settings
 
 
 WebServer Access
