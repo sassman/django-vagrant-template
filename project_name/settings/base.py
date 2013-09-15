@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Django settings for ccutter project.
+# Django settings for project_name project.
 
 import os
 import sys
@@ -112,10 +112,10 @@ MIDDLEWARE_CLASSES = (
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
-ROOT_URLCONF = 'ccutter.urls'
+ROOT_URLCONF = 'project_name.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'ccutter.wsgi.application'
+WSGI_APPLICATION = 'project_name.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
